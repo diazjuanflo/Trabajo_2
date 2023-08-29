@@ -2,6 +2,8 @@
 #Lista las materias que has cursado con sus respectivas notas.
 #Luego muestre la lista por consola mediante un ciclo.
 
+#Debe quitar el comentario de la funcion que desea realizar:
+
 
 def  lista():
     Saludo = """
@@ -89,7 +91,7 @@ def conver_divisas():
     """
     print(Saludo)
 
-    # Definir el diccionario de divisas y sus símbolos
+    
     divisas = { 
         'Euro': '€', 
         'Dollar': '$', 
@@ -119,13 +121,14 @@ def conver_divisas():
     
 def tupla_tipe():
 
-    tupa = (2, 4.5, "juan", [2, 5])
+    mi_tupla = (2, 4.5, "juan", [2, 5], True)
+    contador = 0
 
-    for item in tupa:
-        tipo = type(item).__name__
-        print(f"El valor '{item}' es de tipo: {tipo}")
+    for contador in range(5):
+        tipo_del_valor = type(mi_tupla[contador])
+        print(tipo_del_valor)
 
-#tupla_tipe()
+tupla_tipe()
     
 
 
